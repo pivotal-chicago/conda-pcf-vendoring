@@ -1,0 +1,9 @@
+---
+applications:
+  - name: my-conda-app
+    memory: 256M
+    instances: 1
+    random-route: true
+    path: .
+    buildpack: python_buildpack
+    command: python myapp.py

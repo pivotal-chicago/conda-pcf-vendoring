@@ -1,0 +1,6 @@
+channels:
+  - /tmp/app/vendor
+  - nodefaults
+dependencies:
+  - python=3.6
+  - flask
