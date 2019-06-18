@@ -6,17 +6,17 @@ echo 'Installing Dependencies From conda-forge...'
 echo '###########################################'
 
 sed -i 's:/tmp/app/vendor:conda-forge:' environment.yml
-conda env update -n myapp-env -q -f environment.yml
+conda env update -n example-app-env -q -f environment.yml
 sed -i 's:conda-forge:/tmp/app/vendor:' environment.yml
 
 echo '###########################################'
-echo 'Activating myapp-env conda environment...'
+echo 'Activating example-app-env conda environment...'
 echo '###########################################'
 
 # for some reason, running conda activate in a shell script requires some
 # conda setup before we activate
 source /opt/conda/etc/profile.d/conda.sh
-conda activate myapp-env
+conda activate example-app-env
 
 echo '##################################################'
 echo 'Downloading archives for local conda repository...'

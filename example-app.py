@@ -5,7 +5,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-port = int(os.getenv("VCAP_APP_PORT", default="8099"))
+port = int(os.getenv("VCAP_APP_PORT", "8099"))
 
 
 @app.route('/')
