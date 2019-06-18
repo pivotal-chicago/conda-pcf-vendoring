@@ -14,4 +14,4 @@ To use this example, log into PCF and run `build-and-deploy.sh`. This will boot 
 
 ## See also
 
-* [Vendoring your own packages](`https://github.com/ihuston/conda-channels-on-cf`)
+* [Vendoring your own packages](https://github.com/ihuston/conda-channels-on-cf)
